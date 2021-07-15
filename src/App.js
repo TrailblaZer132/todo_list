@@ -20,7 +20,7 @@ function App() {
 
 
   const addTodo=(event)=>{
-    //this will fire when we click the button
+    //this will fire when we click the button...
     event.preventDefault(); //prevents refreshing the page
     
     db.collection('todos').add({
