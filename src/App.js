@@ -10,7 +10,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [input,setInput]=useState('');
 
-  //When the app loads, we nwwd to listen to the database and fetch new todo as they get added or removed
+  //When the app loads, we nwwd to listen to the database and fetch new todo as they get added/removed
   useEffect(()=>{
     //this code fires when the app.js loads
     db.collection('todos').orderBy('timestamp','desc').onSnapshot(snapshot=>{
