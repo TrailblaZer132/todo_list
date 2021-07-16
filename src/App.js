@@ -37,18 +37,17 @@ function App() {
       <h1>Todo App</h1>
 
       <form>
-      <FormControl>
-        <InputLabel>Write a Todo</InputLabel>
-        <Input value={input} onChange={event => setInput(event.target.value)}/>
-        {/*onChange of an event, it sets the Input to value targetted by the event*/}
-        {/* <button type="submit" onClick={addTodo}>Add Todo</button> */}
-      </FormControl>
+        <FormControl>
+          <InputLabel>Write a Todo</InputLabel>
+          <Input value={input} onChange={event => setInput(event.target.value)}/>
+          {/*onChange of an event, it sets the Input to value targetted by the event*/}
+          {/* <button type="submit" onClick={addTodo}>Add Todo</button> */}
+        </FormControl>      
+      </form>
 
       <Button disabled={!input} type="submit" onClick={addTodo} variant="contained" color="primary">
         Add Todo
       </Button>
-
-      </form>
       
 
       <ul>
