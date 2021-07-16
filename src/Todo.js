@@ -1,6 +1,7 @@
 import React from 'react'
 import './Todo.css'
-import { List,ListItem,ListItemText,ListItemAvatar, Avatar, Container, IconButton, AssignmentIcon} from '@material-ui/core';
+import { List,ListItem,ListItemText,ListItemAvatar, Avatar, Container, IconButton} from '@material-ui/core';
+import AssignmentIcon from '@material-ui/icons/Assignment';
 import db from './firebase'
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 
