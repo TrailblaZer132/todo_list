@@ -16,7 +16,7 @@ function Todo(props) {
                         <AssignmentIcon/>
                     </Avatar>
                     </ListItemAvatar>
-                    <ListItemText primary={props.todo.todo} secondary="Deadline ⏰" />
+                    <ListItemText primary={props.todo.todo} secondary="⏰" />
                     {/* <Button onClick={event=>db.collection('todos').doc(props.todo.id).delete()}>
                             <DeleteForeverIcon/>
                     </Button> */}
