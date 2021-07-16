@@ -1,6 +1,6 @@
 import React from 'react'
 import './Todo.css'
-import { List,ListItem,ListItemText,ListItemAvatar, Avatar, Container, IconButton} from '@material-ui/core';
+import { List,ListItem,ListItemText,ListItemAvatar, Avatar, Container, IconButton, AssignmentIcon} from '@material-ui/core';
 import db from './firebase'
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 
@@ -12,7 +12,7 @@ function Todo(props) {
                 <ListItem>
                     <ListItemAvatar>
                     <Avatar>
-                        <h3>#</h3>
+                        <AssignmentIcon/>
                     </Avatar>
                     </ListItemAvatar>
                     <ListItemText primary={props.todo.todo} secondary="Deadline ⏰" />
